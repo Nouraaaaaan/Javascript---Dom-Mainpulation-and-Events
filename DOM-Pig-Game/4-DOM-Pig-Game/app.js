@@ -52,7 +52,9 @@ document.querySelector('.btn-roll').addEventListener('click',function() {
     else
     {
         //Next player
-        ActivePlayer === 0 ? ActivePlayer === 1 : ActivePlayer === 0 ; //note : this is called ternary operator
+        
+        ActivePlayer === 0 ? ActivePlayer = 1 : ActivePlayer = 0 ; //note : this is called ternary operator
+        console.log("ActivePlayer " + ActivePlayer);
 
         document.getElementById('current-0').textContent = '0';
         document.getElementById('current-1').textContent = '0';
